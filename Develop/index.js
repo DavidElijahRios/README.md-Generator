@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
+
 
 // TODO: Create an array of questions for user input
 const userQuestions = () => {
@@ -48,7 +50,7 @@ const userQuestions = () => {
     {
         type: 'list',
         message: 'Please select one of the following license options appropriate for your project?',
-        choices: ['MIT License', 'GNU GPLv3'],
+        choices: ['MIT License', 'GNU GPLv3', 'None'],
         name: 'license',
     },   
     {
@@ -57,79 +59,17 @@ const userQuestions = () => {
         name: 'techFeatures',
     },   
     {
-        // TODO understand how to show a test of application
         type: 'input',
-        message: 'please provide a test code snippet of application',
+        message: 'Were there any test to provide?',
         name: 'test',
     },         
      ]);   
 };
 
-// TODO: Create a function to write README file
-function writeToFile({projectName, descriptionA, descriptionB, descriptionC, installation, usage, collaborationA, collaborationB, license, techFeatures, test}) {
-   return `
-   # ${projectName}
-
-   ## Description
-   
-    ${descriptionA}.
-    ${descriptionB}.
-    ${descriptionC}.
-
-   ## Table of Contents
-   
-   - [Installation](#installation)
-   - [Usage](#usage)
-   - [Credits](#credits)
-   - [License](#license)
-   
-   ## Installation
-   
-   ${installation}.
-   
-
-   ## Usage
-   
-   ${usage}.
- <!-- Please add your link of images, screenshots, Gifs, etc. below  -->
-   [alt text](assets/images/screenshot.png)
-
-   
-   ## Credits
-   
-   ${collaborationA}
-   ${collaborationB}
-
-   
-   ## License
-   
-   ${license}
-
-  
-   ## Badges
-   
-  
-
-
-   ## Features
-
-   
-   ${techFeatures}.
-
-   
-   ## Tests 
-   
-
-   ${test}.
-   
-   `;
-   
-}
-
 // TODO: Create a function to initialize app
 function init() {
     userQuestions()
-    .then((answers) => fs.writeFileSync('README.md', writeToFile(answers)))
+    .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
     .then(() => console.log('Successfully generated README.md file!! Yay!!!'))
     .catch((err) => console.error(err));
 };
