@@ -1,5 +1,4 @@
-
-  # README.md Generator 
+# README.md Generator 
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -91,6 +90,3 @@
 
 
   Please Feel free to contact me at David.riostech@outlook.com if you have any questions.
-
-  
-  
