@@ -37,7 +37,7 @@
 
   Once all necessary packages are installed proceed to type in command line 'node index.js' to initiate the application. Once command is ran, you will then be prompted questions, which at the completion of answering them will generate your README.md file.
 
-  [Application Demo](./Develop/Videos%3AImages/Untitled_%20May%2020%2C%202022%2011_15%20PM.gif)
+  [Application Demo](./Videos%3AImages/Untitled_%20May%2020%2C%202022%2011_15%20PM.gif)
 
 
 
