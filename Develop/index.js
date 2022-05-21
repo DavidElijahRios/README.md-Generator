@@ -50,7 +50,7 @@ const userQuestions = () => {
     {
         type: 'list',
         message: 'Please select one of the following license options appropriate for your project?',
-        choices: ['MIT License', 'GNU GPLv3', 'None'],
+        choices: ['MIT License', 'GNU GPLv3', 'Eclipse Public License 1.0', 'Mozilla Public License 2.0', 'None'],
         name: 'license',
     },   
     {
@@ -60,9 +60,19 @@ const userQuestions = () => {
     },   
     {
         type: 'input',
-        message: 'Were there any test to provide?',
+        message: 'Please provide (if any) command line test ran for application?',
         name: 'test',
-    },         
+    },
+    {
+        type: 'input',
+        message: 'Please enter your GitHub username',
+        name: 'GitHub',
+    },
+    {
+        type: 'input',
+        message: 'What email is the best to reach you for any questions about your application?',
+        name: 'Email',
+    },                           
      ]);   
 };
 
