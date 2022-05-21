@@ -76,9 +76,9 @@ ${renderLicenseBadge(data.license)}
   ## Description
 
   
-   ${data.descriptionA}.
-   ${data.descriptionB}.
-   ${data.descriptionC}.
+   ${data.descriptionA}
+   ${data.descriptionB}
+   ${data.descriptionC}
 
 
 
