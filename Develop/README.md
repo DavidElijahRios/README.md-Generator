@@ -1,19 +1,11 @@
-
-  # Note-Taker 
+# README.md Generator 
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
   ## Description
-
   
-   I wanted to Utilize express to create a server and be able to send information using routes to be able to put user data onto an application
-   It helps solve a way to not use local storage to store data of a user and be able to store data on a local server.
-   I learned that Express is a great tool to use when needing to get different pages from user input as well as use data from user input to put into an application.
-
-
-
+   I wanted to create an application that would allow for a developer to save time in project planning and generate a README.md file effortlessly.
+   It helps cutting down the extra time to construct from scratch the layout and set up need for a quality README.md file and rather has a user answer questions that generate the file based off there answers. Any tool that will save a developer time is something truly valuable and essential for maximum efficiency.
   ## Table of Contents
   
   - [Installation](#installation)
@@ -23,75 +15,37 @@
   - [Features](#features)
   - [Tests](#tests)
   - [Questions](questions)
-
-
   
   ## Installation
   
-
-  1) Create Repository and clone into my local machine. 2) Ran the command in terminal npm i to bring in all dependecies for application. 3) Needed to get it online through Heroku with following command lines "heroku login" "heroku create" "git remote -v" "git push heroku main".
+  1) Firstly, creating a clone of repository in local machine will need to be done first. 2) After, you will need to go to the location of repository through your Terminal or Bash. 3) next you will need to type in command line 'npm i -y' to install package.json and package-lock.json. 4) Lastly, you will need to type in command line 'npm i inquirer' to install necessary node modules for application to run properly.
   
-
-
-
   ## Usage
   
+  Once all necessary packages are installed proceed to type in command line 'node index.js' to initiate the application. Once command is ran, you will then be prompted questions, which at the completion of answering them will generate your README.md file.
+  
+  [Application Demo](./Videos%3AImages/Untitled_%20May%2020%2C%202022%2011_15%20PM.gif)
 
-  1) You will need to create your repository and install all necessary pacakges with npm i in your terminal. 2) then run command node server.js to activate the server. 3) once server is runnig application link should be functioning.
-<!-- Please add your link of images, screenshots, Gifs, etc. below  -->
-  <!-- [alt text](assets/images/screenshot.png) -->
-
-
-
-
+  
   ## Credits
   
-
-  David R.
+  David Rios
   
-
-
-
-
  ## License
-
-
   License is MIT License
-
-
     
     
-
-
-
-
   ## Features
-
   
-  Javascript, HTML5, CSS3, node.js, npm, and express.
-
-
-
-
+  JavaScript, node.js, and Npm were the technologies used for this application.
   ## Tests
-
-
     N/A
     
-
     
     
   
-
-
-
   ## Questions
-
-
   GitHub: [DavidElijahRios](https://github.com/DavidElijahRios)
 
 
-  Please Feel free to contact me at Riosdavid16@gmail.com if you have any questions.
-
-  
-  
+  Please Feel free to contact me at David.riostech@outlook.com if you have any questions.
